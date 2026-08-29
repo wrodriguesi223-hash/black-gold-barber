@@ -1,0 +1,447 @@
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Black Gold Barber</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         CABEÇALHO
+    ========================== -->
+
+    <header>
+
+        <!-- LOGO -->
+        <div class="logo">
+            <span>BLACK</span>
+            <strong>GOLD</strong>
+            <span>BARBER</span>
+        </div>
+
+        <!-- MENU -->
+        <nav id="menu">
+            <a href="#inicio">Início</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#sobre">Sobre Nós</a>
+            <a href="#galeria">Galeria</a>
+            <a href="#contato">Contato</a>
+        </nav>
+
+        <!-- BOTÃO DO MENU MOBILE -->
+        <button class="menu-btn" onclick="abrirMenu()">☰</button>
+
+    </header>
+
+
+    <!-- =========================
+         CONTEÚDO PRINCIPAL
+    ========================== -->
+
+    <main>
+
+
+        <!-- =========================
+             INÍCIO
+        ========================== -->
+
+        <section id="inicio">
+
+            <h2>ESTILO QUE IMPÕE RESPEITO.</h2>
+
+            <p>
+                Cortes impecáveis. Barba alinhada.
+                Seu estilo, no mais alto nível.
+            </p>
+
+            <a href="#agendamento" class="botao-agendar">
+                Agendar Horário
+            </a>
+
+        </section>
+
+
+        <!-- =========================
+             SERVIÇOS
+        ========================== -->
+
+        <section id="servicos">
+
+            <h2>NOSSOS SERVIÇOS</h2>
+
+
+            <div>
+                <h3>Corte Masculino</h3>
+
+                <p>
+                    Corte moderno feito por profissionais.
+                </p>
+
+                <strong>R$ 40</strong>
+            </div>
+
+
+            <div>
+                <h3>Corte + Barba</h3>
+
+                <p>
+                    Corte completo com barba alinhada.
+                </p>
+
+                <strong>R$ 65</strong>
+            </div>
+
+
+            <div>
+                <h3>Barba</h3>
+
+                <p>
+                    Modelagem e acabamento profissional.
+                </p>
+
+                <strong>R$ 30</strong>
+            </div>
+
+
+            <div>
+                <h3>Corte Infantil</h3>
+
+                <p>
+                    Cortes modernos para os pequenos.
+                </p>
+
+                <strong>R$ 35</strong>
+            </div>
+
+
+            <div>
+                <h3>Sobrancelha</h3>
+
+                <p>
+                    Design e acabamento.
+                </p>
+
+                <strong>R$ 20</strong>
+            </div>
+
+
+            <div>
+                <h3>Platinado</h3>
+
+                <p>
+                    Descoloração e transformação completa.
+                </p>
+
+                <strong>R$ 120</strong>
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             SOBRE NÓS
+        ========================== -->
+
+        <section id="sobre">
+
+            <h2>MAIS QUE UM CORTE. UMA EXPERIÊNCIA.</h2>
+
+            <p>
+                Na Black Gold Barber, cada detalhe foi pensado
+                para oferecer uma experiência diferenciada.
+                Nosso objetivo é deixar você com o visual
+                que combina com seu estilo.
+            </p>
+
+        </section>
+
+
+        <!-- =========================
+             GALERIA
+        ========================== -->
+
+        <section id="galeria">
+
+            <h2>NOSSO TRABALHO</h2>
+
+            <div class="galeria">
+
+                <img
+                    src="img/Cabelo1.jpg"
+                    alt="Corte masculino"
+                >
+
+                <img
+                    src="img/Cabelo2.jpg"
+                    alt="Corte degradê"
+                >
+
+                <img
+                    src="img/barba.jpg"
+                    alt="Barba masculina"
+                >
+
+                <img
+                    src="img/barbearia.jpg"
+                    alt="Interior da barbearia"
+                >
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             AVALIAÇÕES
+        ========================== -->
+
+        <section id="avaliacoes">
+
+            <h2>O QUE NOSSOS CLIENTES DIZEM</h2>
+
+
+            <article>
+
+                <h3>João Silva</h3>
+
+                <p>★★★★★</p>
+
+                <p>
+                    Ambiente incrível e o corte ficou
+                    exatamente como eu queria.
+                </p>
+
+            </article>
+
+
+            <article>
+
+                <h3>Lucas Santos</h3>
+
+                <p>★★★★★</p>
+
+                <p>
+                    Excelente atendimento.
+                    Com certeza vou voltar.
+                </p>
+
+            </article>
+
+
+            <article>
+
+                <h3>Pedro Oliveira</h3>
+
+                <p>★★★★★</p>
+
+                <p>
+                    Profissionais muito bons e
+                    ambiente muito confortável.
+                </p>
+
+            </article>
+
+        </section>
+
+
+        <!-- =========================
+             AGENDAMENTO
+        ========================== -->
+
+        <section id="agendamento">
+
+            <h2>AGENDE SEU HORÁRIO</h2>
+
+            <form id="form-agendamento">
+
+                <!-- NOME -->
+
+                <label for="nome">
+                    Nome:
+                </label>
+
+                <input
+                    type="text"
+                    id="nome"
+                    name="nome"
+                    placeholder="Digite seu nome"
+                    required
+                >
+
+
+                <!-- WHATSAPP -->
+
+                <label for="telefone">
+                    WhatsApp:
+                </label>
+
+                <input
+                    type="tel"
+                    id="telefone"
+                    name="telefone"
+                    placeholder="(24) 99999-9999"
+                    required
+                >
+
+
+                <!-- SERVIÇO -->
+
+                <label for="servico">
+                    Serviço:
+                </label>
+
+                <select
+                    id="servico"
+                    name="servico"
+                    required
+                >
+
+                    <option value="">
+                        Selecione um serviço
+                    </option>
+
+                    <option value="Corte Masculino">
+                        Corte Masculino
+                    </option>
+
+                    <option value="Corte + Barba">
+                        Corte + Barba
+                    </option>
+
+                    <option value="Barba">
+                        Barba
+                    </option>
+
+                    <option value="Corte Infantil">
+                        Corte Infantil
+                    </option>
+
+                    <option value="Sobrancelha">
+                        Sobrancelha
+                    </option>
+
+                    <option value="Platinado">
+                        Platinado
+                    </option>
+
+                </select>
+
+
+                <!-- DATA -->
+
+                <label for="data">
+                    Data:
+                </label>
+
+                <input
+                    type="date"
+                    id="data"
+                    name="data"
+                    required
+                >
+
+
+                <!-- HORÁRIO -->
+
+                <label for="horario">
+                    Horário:
+                </label>
+
+                <input
+                    type="time"
+                    id="horario"
+                    name="horario"
+                    required
+                >
+
+
+                <!-- BOTÃO -->
+
+                <button type="submit">
+                    AGENDAR MEU HORÁRIO
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <!-- =========================
+             CONTATO
+        ========================== -->
+
+        <section id="contato">
+
+            <h2>FALE CONOSCO</h2>
+
+            <p>
+                📍 Rua da Barbearia, 123
+            </p>
+
+            <p>
+                📱 WhatsApp:
+                (24) 99999-9999
+            </p>
+
+            <p>
+                📸 Instagram:
+                @blackgoldbarber
+            </p>
+
+            <p>
+                🕐 Segunda a Sábado:
+                09:00 às 20:00
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         BOTÃO FLUTUANTE WHATSAPP
+    ========================== -->
+
+    <a
+        href="https://wa.me/5524999999999"
+        class="whatsapp"
+        target="_blank"
+    >
+        WhatsApp
+    </a>
+
+
+    <!-- =========================
+         RODAPÉ
+    ========================== -->
+
+    <footer>
+
+        <h2>BLACK GOLD BARBER</h2>
+
+        <p>
+            © 2026 Black Gold Barber.
+            Todos os direitos reservados.
+        </p>
+
+    </footer>
+
+
+    <!-- =========================
+         JAVASCRIPT
+    ========================== -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+

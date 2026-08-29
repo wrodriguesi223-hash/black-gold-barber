@@ -1,0 +1,526 @@
+"css
+/* CONFIGURAÇÕES GERAIS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 0;
+}
+
+body {
+    background-color: #080808;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+
+/* CABEÇALHO */
+
+header {
+    background-color: #000000;
+    padding: 25px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #c9a227;
+}
+
+header h1 {
+    color: #d4af37;
+    font-size: 28px;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #d4af37;
+}
+
+
+/* INÍCIO */
+
+#inicio {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.75),
+        rgba(0, 0, 0, 0.9)
+    );
+}
+
+#inicio h2 {
+    color: #d4af37;
+    font-size: 55px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 0 0 15px rgba(212, 175, 55, 0.4);
+}
+
+#inicio p {
+    font-size: 20px;
+    max-width: 600px;
+    margin-bottom: 30px;
+}
+
+
+/* BOTÕES */
+
+button {
+    background-color: #d4af37;
+    color: #000;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #f0cf55;
+    transform: scale(1.05);
+}
+
+
+/* SEÇÕES */
+
+section {
+    padding: 80px 8%;
+    text-align: center;
+}
+
+section h2 {
+    color: #d4af37;
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+
+
+/* SERVIÇOS */
+
+#servicos {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+#servicos h2 {
+    grid-column: 1 / -1;
+}
+
+#servicos div {
+    background-color: #111;
+    border: 1px solid #c9a227;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+#servicos h3 {
+    color: #d4af37;
+    margin-bottom: 15px;
+    font-size: 22px;
+}
+
+#servicos p {
+    margin-bottom: 20px;
+    color: #ccc;
+}
+
+#servicos strong {
+    color: #d4af37;
+    font-size: 22px;
+}
+
+
+/* SOBRE */
+
+#sobre {
+    background-color: #0d0d0d;
+}
+
+#sobre p {
+    max-width: 750px;
+    margin: auto;
+    line-height: 1.8;
+    color: #ccc;
+    font-size: 18px;
+}
+
+
+/* GALERIA */
+
+#galeria img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    margin: 10px;
+    border: 2px solid #d4af37;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+#galeria img:hover {
+    transform: scale(1.05);
+}
+
+
+/* AVALIAÇÕES */
+
+article {
+    display: inline-block;
+    width: 300px;
+    margin: 15px;
+    padding: 30px;
+    background-color: #111;
+    border: 1px solid #c9a227;
+    border-radius: 10px;
+}
+
+article h3 {
+    color: #d4af37;
+    margin-bottom: 10px;
+}
+
+article p:first-of-type {
+    color: #d4af37;
+    margin-bottom: 15px;
+}
+
+
+/* FORMULÁRIO */
+
+form {
+    max-width: 500px;
+    margin: auto;
+    text-align: left;
+}
+
+form label {
+    color: #d4af37;
+    font-weight: bold;
+}
+
+form input,
+form select {
+    width: 100%;
+    padding: 13px;
+    margin-top: 8px;
+    background-color: #111;
+    border: 1px solid #555;
+    color: white;
+    border-radius: 5px;
+}
+
+form button {
+    width: 100%;
+    margin-top: 15px;
+}
+
+
+/* CONTATO */
+
+#contato {
+    background-color: #0d0d0d;
+}
+
+#contato p {
+    margin: 15px;
+    color: #ccc;
+    font-size: 18px;
+}
+
+
+/* RODAPÉ */
+
+footer {
+    background-color: #000;
+    text-align: center;
+    padding: 40px;
+    border-top: 1px solid #c9a227;
+}
+
+footer h2 {
+    color: #d4af37;
+    margin-bottom: 15px;
+}
+
+footer p {
+    color: #777;
+}
+
+
+/* CELULAR */
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #inicio h2 {
+        font-size: 35px;
+    }
+
+    #servicos {
+        grid-template-columns: 1fr;
+    }
+
+    #galeria img {
+        width: 90%;
+        height: auto;
+    }
+}
+#inicio {
+    min-height: 90vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    padding: 40px 20px;
+
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.65),
+            rgba(0, 0, 0, 0.85)
+        ),
+        url("img/barbearia.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/* BOTÃO FLUTUANTE DO WHATSAPP */
+
+.whatsapp {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+
+    background-color: #25D366;
+    color: white;
+
+    text-decoration: none;
+    font-weight: bold;
+
+    padding: 15px 22px;
+    border-radius: 50px;
+
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+
+    z-index: 1000;
+
+    transition: 0.3s;
+}
+
+.whatsapp:hover {
+    transform: scale(1.08);
+}
+/* ANIMAÇÕES */
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#inicio h2 {
+    animation: aparecer 1s ease;
+}
+
+#inicio p {
+    animation: aparecer 1.4s ease;
+}
+
+#inicio button {
+    animation: aparecer 1.8s ease;
+}
+
+
+/* EFEITO DOURADO NOS CARDS */
+
+#servicos div {
+    transition: 0.3s;
+}
+
+#servicos div:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 30px rgba(212, 175, 55, 0.2);
+    border-color: #d4af37;
+}
+
+
+/* EFEITO NOS BOTÕES */
+
+button {
+    transition: 0.3s;
+}
+
+button:hover {
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.5);
+}
+/* GALERIA */
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.galeria img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+
+    border: 2px solid #d4af37;
+    border-radius: 10px;
+
+    transition: 0.4s;
+}
+
+.galeria img:hover {
+    transform: scale(1.04);
+    box-shadow: 0 0 25px rgba(212, 175, 55, 0.3);
+}
+/* CELULAR */
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    #inicio {
+        min-height: 85vh;
+        padding: 30px 20px;
+    }
+
+    #inicio h2 {
+        font-size: 36px;
+    }
+
+    #inicio p {
+        font-size: 17px;
+    }
+
+    #servicos {
+        grid-template-columns: 1fr;
+    }
+
+    .galeria {
+        grid-template-columns: 1fr;
+    }
+
+    .galeria img {
+        height: 300px;
+    }
+
+    article {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    section {
+        padding: 60px 20px;
+    }
+
+    .whatsapp {
+        right: 15px;
+        bottom: 15px;
+        padding: 13px 18px;
+    }
+}
+.botao-agendar {
+    display: inline-block;
+    background-color: #d4af37;
+    color: #000;
+    text-decoration: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.botao-agendar:hover {
+    background-color: #f0cf55;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.5);
+}
+/* ========================= */
+/* MENU MOBILE */
+/* ========================= */
+
+.menu-btn {
+    display: none;
+    background: transparent;
+    color: #d4af37;
+    border: 1px solid #d4af37;
+    font-size: 25px;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+
+/* CELULAR */
+
+@media (max-width: 768px) {
+
+    .menu-btn {
+        display: block;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+        text-align: center;
+    }
+
+    nav.ativo {
+        display: flex;
+    }
+}
+"
